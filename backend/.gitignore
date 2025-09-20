@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# FastAPI specific
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database migrations (if using Alembic)
+alembic/versions/*.py
+!alembic/versions/__init__.py
+
+# Local development files
+local_settings.py
+dev_settings.py
+
+# Uploaded files (if you have file uploads)
+uploads/
+media/
+static/
+
+# Cache
+.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Package files
+*.tar.gz
+*.zip
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
