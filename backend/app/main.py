@@ -6,6 +6,11 @@ from typing import Any
 app = FastAPI()
 
 
+@app.get("/shipment/latest")
+def get_latest_shipment():
+    return {"id": 1016789, "weight": 75, "content": "a foiter", "status": "delivered"}
+
+
 @app.get("/shipment/{id}")
 def get_shipment(id: int) -> dict[str, Any]:
     return {"id": id, "weight": 2.75, "content": "sch40 pvc", "status": "in transit"}
